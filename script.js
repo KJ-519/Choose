@@ -14,7 +14,7 @@ choice1Aimage.style.display ="none";
 
 
 headButton.addEventListener('click', function() {
-text.innerHTML = "The tracks lead you deeper into the subway tunnels. You encounter a scavenger who is hostile. Double click picture to fight off. ";
+text.innerHTML = "Halfway during your freshman season, you suffer a year-ending injury. ";
 choice1image.style.display = "none";
 choice1Aimage.style.display ="block";
 exploreButton.style.display="none";
@@ -24,4 +24,12 @@ headButton.style.display="none";
 choice1Aimage.addEventListener('dblclick', function(){
     text.innerHTML = "You make it another day"
     choice1Aimage.src = "knockedout.jpg";
+});
+
+exploreButton.addEventListener('click', function() {
+text.innerHTML = "After two successful years, you get injured during your junior year which decreases your draft stock."
+choice2image.style.display = "none";
+choice2Bimage.style.display ="none";
+exploreButton.style.display="none";
+headButton.style.display="none";
 });
