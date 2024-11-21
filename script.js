@@ -9,12 +9,15 @@ let text = document.querySelector('.text');
 let choice1Aimage = document.querySelector('.choice1Aimage');
 choice1Aimage.style.display ="none";
 
+let choice2Aimage = document.querySelector('.choice2Aimage');
+choice2Aimage.style.display ="none";
+
 let choice2Bimage = document.querySelector('.choice2Bimage');
 choice2Bimage.style.display ="none";
 
 let Helicopter = document.querySelector('h2');
-let h2 = document.querySelector('hide')
-Helicopter.style.display = "none"
+let h2 = document.querySelector('hide');
+Helicopter.style.display = "none";
 
 
 headButton.addEventListener('click', function() {
@@ -23,12 +26,17 @@ choice1image.style.display = "none";
 choice1Aimage.style.display ="block";
 exploreButton.style.display="none";
 headButton.style.display="none";
-Helicopter.style.display="none"
+Helicopter.style.display="none";
+choice2Aimage.style.display = "none";
+
+
 });
 
 choice1Aimage.addEventListener('dblclick', function(){
-    text.innerHTML = "You go into rehab and prepare for a comeback in your junior year."
+    text.innerHTML = "You go into rehab and prepare for a comeback in your junior year.";
     choice1Aimage.src = "rehab.jpg";
+    headButton.style.display = "none";
+    Helicopter.style.display = "block";
 });
 
 exploreButton.addEventListener('click', function() {
@@ -38,10 +46,21 @@ choice1image.style.display = "none";
 choice2image.style.display = "none";
 exploreButton.style.display= "none";
 headButton.style.display="none";
-Helicopter.style.display="block"
+Helicopter.style.display="none";
 });
 
 Helicopter.addEventListener('mouseenter', function(){
-    text.innerHTML = "You go into rehab and prepare for a comeback in your senior year."
-    choice2Bimage.src = "injuredplayer2.jpg";
+    text.innerHTML = "Give up on your dream of playing basketball and focus on your education.";
+    choice2Aimage.src = "collegestudent.jpg";
+    choice2Aimage.style.display = "block";
+    choice1Aimage.style.display = "none";
+    Helicopter.style.display = "none";
 });
+
+
+
+
+
+
+
+
