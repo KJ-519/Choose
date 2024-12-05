@@ -1,6 +1,9 @@
-body{width:300px;}
+body{
+background-color: #cbcccd;
+width:300px;}
 img{width:300px;
 margin:0 auto;}
 
 button{margin:5px;
 padding:25px}
+
