@@ -15,8 +15,8 @@ choice2Aimage.style.display ="none";
 let choice1Bimage = document.querySelector('.choice1Bimage');
 choice1Bimage.style.display ="none";
 
-let choice2Bimage = document.querySelector('choice2Bimage');
-choice2Bimage.style.display = "none"
+let choice2Bimage = document.querySelector('.choice2Bimage');
+choice2Bimage.style.display = "none";
 
 let Helicopter = document.querySelector('h2');
 let h2 = document.querySelector('hide');
@@ -67,7 +67,7 @@ choice1Bimage.addEventListener('dblclick', function(){
     choice1Bimage.src = "rehab2.jpg";
     headButton.style.display = "none";
     Rocket.style.display = "block";
-    choice1Bimage.style.display = "block"
+    choice1Bimage.style.display = "block";
 });
 
 Rocket.addEventListener('mouseenter', function(){
@@ -75,6 +75,7 @@ Rocket.addEventListener('mouseenter', function(){
     choice2Bimage.src = "coach.jpg";
     choice2Bimage.style.display = "block";
     choice1Aimage.style.display = "none";
+    choice1Bimage.style.display="none"
     Rocket.style.display = "none";
 });
 
